@@ -6,6 +6,22 @@
           box-sizing: border-box;
 }
 
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -27,7 +43,7 @@ body {
   font-weight: bold;
   font-size: 2em;
   color: #1d3557;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .pricing__description {
@@ -43,7 +59,7 @@ body {
 
 .card__container {
   width: 90vw;
-  margin-top: 4em;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,13 +185,45 @@ body {
   margin-bottom: 0;
 }
 
+.card__container .card .note {
+  min-width: 80%;
+  padding: 1em;
+  border-radius: .7em;
+  background: #f8f8f8;
+}
+
+.card__container .card .note .note__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .4em;
+}
+
+.card__container .card .note .note__content .content__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: .9em;
+  color: #1d3557;
+}
+
+.card__container .card .note .note__content .content__text {
+  min-width: 244px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: .8em;
+  color: #457b9d;
+}
+
 .card__container .card .btn__action {
   width: 100%;
   padding: 1em 0;
   border-radius: 0.56em;
   background: -webkit-gradient(linear, left top, left bottom, from(#599ec9), to(#457b9d));
   background: linear-gradient(#599ec9 0%, #457b9d 100%);
-  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,8 +236,8 @@ body {
 .card__container .card .btn__action:active {
   background: -webkit-gradient(linear, left top, left bottom, from(#457b9d), to(#599ec9));
   background: linear-gradient(#457b9d 0%, #599ec9 100%);
-  -webkit-transition: .6s all ease-in-out;
-  transition: .6s all ease-in-out;
+  -webkit-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 
 .card__container .card .btn__action a {
@@ -300,13 +348,45 @@ body {
   margin-bottom: 0;
 }
 
+.card__container .card__advanced .note {
+  min-width: 80%;
+  padding: 1em;
+  border-radius: .7em;
+  background: rgba(70, 125, 201, 0.15);
+}
+
+.card__container .card__advanced .note .note__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .4em;
+}
+
+.card__container .card__advanced .note .note__content .content__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: .9em;
+  color: #ffffff;
+}
+
+.card__container .card__advanced .note .note__content .content__text {
+  min-width: 244px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: .8em;
+  color: #f8f8f8;
+}
+
 .card__container .card__advanced .btn__action {
   width: 100%;
   padding: 1em 0;
   border-radius: 0.56em;
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e1e1e1));
   background: linear-gradient(#f8f8f8 0%, #e1e1e1 100%);
-  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,8 +399,8 @@ body {
 .card__container .card__advanced .btn__action:active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #e1e1e1), to(#f8f8f8));
   background: linear-gradient(#e1e1e1 10%, #f8f8f8 100%);
-  -webkit-transition: .6s all ease-in-out;
-  transition: .6s all ease-in-out;
+  -webkit-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 
 .card__container .card__advanced .btn__action a {
